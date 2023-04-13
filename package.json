@@ -81,5 +81,8 @@
     "./dist/style.css": "./dist/style.css"
   },
   "main": "./dist/clear-component-library.umd.js",
-  "module": "./dist/clear-component-library.es.js"
+  "module": "./dist/clear-component-library.es.js",
+  "publishConfig": {
+    "@jermspeaks:registry": "https://npm.pkg.github.com"
+  }
 }
