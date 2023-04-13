@@ -6,7 +6,7 @@ import fonts from '../../constants/themes/fonts';
 import palette from '../../constants/themes/palette';
 
 const Paragraph = styled.p`
-  color: ${({ fade }) => (fade ? palette.secondaryText[0] : palette.primaryText[0])};
+  color: ${({ fade }) => (fade ? palette.secondaryText : palette.primaryText)};
   font-family: ${fonts.primary};
   font-size: ${({ small }) => (small ? fontSizes.h4 : fontSizes.h3)};
   line-height: ${({ small }) => (small ? lineHeights.h4 : lineHeights.h3)};

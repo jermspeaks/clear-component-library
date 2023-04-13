@@ -1,0 +1,111 @@
+import { Meta } from '@storybook/blocks';
+
+import ColorBlock from './ColorBlock';
+import palette from '../constants/themes/palette';
+
+<Meta title="Design System/Foundations/Colors" />
+
+<style>{``}</style>
+
+# Colors
+
+## Palettes
+
+<div style={{ display: 'flex', justifyContent: 'flex-start', gap: '5rem' }}>
+  <div>
+    <h3>Primary (Accent)</h3>
+
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
+      <ColorBlock backgroundColor={palette.brand100}>100 {palette.brand100}</ColorBlock>
+      <ColorBlock backgroundColor={palette.brand200}>200 {palette.brand200}</ColorBlock>
+      <ColorBlock backgroundColor={palette.brand300}>300 {palette.brand300}</ColorBlock>
+      <ColorBlock backgroundColor={palette.brand400}>400 {palette.brand400}</ColorBlock>
+      <ColorBlock backgroundColor={palette.brand500}>500 {palette.brand500}</ColorBlock>
+      <ColorBlock backgroundColor={palette.brand600}>600 {palette.brand600}</ColorBlock>
+      <ColorBlock backgroundColor={palette.brand700}>700 {palette.brand700}</ColorBlock>
+      <ColorBlock backgroundColor={palette.brand800}>800 {palette.brand800}</ColorBlock>
+      <ColorBlock backgroundColor={palette.brand900}>900 {palette.brand900}</ColorBlock>
+    </div>
+
+  </div>
+  <div>
+    <h3>Grayscale</h3>
+
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
+      <ColorBlock backgroundColor={palette.grayscale100}>100 {palette.grayscale100}</ColorBlock>
+      <ColorBlock backgroundColor={palette.grayscale200}>200 {palette.grayscale200}</ColorBlock>
+      <ColorBlock backgroundColor={palette.grayscale300}>300 {palette.grayscale300}</ColorBlock>
+      <ColorBlock backgroundColor={palette.grayscale400}>400 {palette.grayscale400}</ColorBlock>
+      <ColorBlock backgroundColor={palette.grayscale500}>500 {palette.grayscale500}</ColorBlock>
+      <ColorBlock backgroundColor={palette.grayscale600}>600 {palette.grayscale600}</ColorBlock>
+      <ColorBlock backgroundColor={palette.grayscale700}>700 {palette.grayscale700}</ColorBlock>
+      <ColorBlock backgroundColor={palette.grayscale800}>800 {palette.grayscale800}</ColorBlock>
+      <ColorBlock backgroundColor={palette.grayscale900}>900 {palette.grayscale900}</ColorBlock>
+    </div>
+
+  </div>
+</div>
+
+### Semantic
+
+<div style={{ display: 'flex', justifyContent: 'flex-start', gap: '5rem' }}>
+  <div>
+    <h4>Success</h4>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
+      <ColorBlock backgroundColor={palette.success100}>100 {palette.success100}</ColorBlock>
+      <ColorBlock backgroundColor={palette.success200}>200 {palette.success200}</ColorBlock>
+      <ColorBlock backgroundColor={palette.success300}>300 {palette.success300}</ColorBlock>
+      <ColorBlock backgroundColor={palette.success400}>400 {palette.success400}</ColorBlock>
+      <ColorBlock backgroundColor={palette.success500}>500 {palette.success500}</ColorBlock>
+      <ColorBlock backgroundColor={palette.success600}>600 {palette.success600}</ColorBlock>
+      <ColorBlock backgroundColor={palette.success700}>700 {palette.success700}</ColorBlock>
+      <ColorBlock backgroundColor={palette.success800}>800 {palette.success800}</ColorBlock>
+      <ColorBlock backgroundColor={palette.success900}>900 {palette.success900}</ColorBlock>
+    </div>
+  </div>
+  <div>
+    <h4>Warning</h4>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
+      <ColorBlock backgroundColor={palette.warning100}>100 {palette.warning100}</ColorBlock>
+      <ColorBlock backgroundColor={palette.warning200}>200 {palette.warning200}</ColorBlock>
+      <ColorBlock backgroundColor={palette.warning300}>300 {palette.warning300}</ColorBlock>
+      <ColorBlock backgroundColor={palette.warning400}>400 {palette.warning400}</ColorBlock>
+      <ColorBlock backgroundColor={palette.warning500}>500 {palette.warning500}</ColorBlock>
+      <ColorBlock backgroundColor={palette.warning600}>600 {palette.warning600}</ColorBlock>
+      <ColorBlock backgroundColor={palette.warning700}>700 {palette.warning700}</ColorBlock>
+      <ColorBlock backgroundColor={palette.warning800}>800 {palette.warning800}</ColorBlock>
+      <ColorBlock backgroundColor={palette.warning900}>900 {palette.warning900}</ColorBlock>
+    </div>
+  </div>
+  <div>
+    <h4>Error</h4>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
+      <ColorBlock backgroundColor={palette.error100}>100 {palette.error100}</ColorBlock>
+      <ColorBlock backgroundColor={palette.error200}>200 {palette.error200}</ColorBlock>
+      <ColorBlock backgroundColor={palette.error300}>300 {palette.error300}</ColorBlock>
+      <ColorBlock backgroundColor={palette.error400}>400 {palette.error400}</ColorBlock>
+      <ColorBlock backgroundColor={palette.error500}>500 {palette.error500}</ColorBlock>
+      <ColorBlock backgroundColor={palette.error600}>600 {palette.error600}</ColorBlock>
+      <ColorBlock backgroundColor={palette.error700}>700 {palette.error700}</ColorBlock>
+      <ColorBlock backgroundColor={palette.error800}>800 {palette.error800}</ColorBlock>
+      <ColorBlock backgroundColor={palette.error900}>900 {palette.error900}</ColorBlock>
+    </div>
+  </div>
+  <div>
+    <h4>Special</h4>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
+      <ColorBlock backgroundColor={palette.specialOrange}>
+        Special {palette.specialOrange}
+      </ColorBlock>
+    </div>
+  </div>
+</div>
+
+## Brand Color Usage
+
+<ColorBlock backgroundColor={palette.brand500}>4.58 : 1</ColorBlock>
+
+Primary color in digital applications only (Light Theme)
+
+Compliance for Normal Text on Ligt BCG (4.5 : 1)
+(< 24px is which bigger than any font size in our app)
