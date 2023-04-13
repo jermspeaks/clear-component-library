@@ -1,0 +1,41 @@
+import { Canvas, Meta, Story } from '@storybook/blocks';
+
+import * as HeadingStories from '../components/Heading/index.stories';
+import * as ParagraphStories from '../components/Paragraph/index.stories';
+import ColorBlock from './ColorBlock';
+import Heading from '../components/Heading';
+import palette from '../constants/themes/palette';
+
+<Meta title="Design System/Foundations/Typography" />
+
+<style>{``}</style>
+
+# Typography
+
+## Font Styles
+
+### Heading
+
+<div>
+  <Canvas of={HeadingStories.Overview} />
+</div>
+
+### Paragraph
+
+<div>
+  <Canvas of={ParagraphStories.Small} />
+</div>
+
+## Content
+
+### Title Case
+
+Title (or headline) case capitalization is where the first letter of most words is capitalized,
+but not articles, conjunctions, or prepositions
+(except if any of these are the first or last word in the sentence or phrase).
+
+### Sentence Case
+
+Use sentence case capitalization for all UI text elements.
+Capitalize only the initial letter of the first word in the text
+and other words that require capitalization, such as proper nouns.
