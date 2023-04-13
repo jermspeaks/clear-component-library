@@ -80,6 +80,6 @@
   "main": "./dist/clear-component-library.umd.js",
   "module": "./dist/clear-component-library.es.js",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/@jermspeaks"
   }
 }
