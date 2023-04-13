@@ -1,26 +1,71 @@
 {
-  "name": "clear-components",
+  "name": "clear-component-library",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Jeremy Wong<jeremy.wong@clearlabs.com>",
+  "bugs": {
+    "url": "https://github.com/jermspeaks/clear-component-library/issues"
+  },
+  "homepage": "https://github.com/jermspeaks/clear-component-library#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jermspeaks/clear-component-library"
+  },
   "type": "module",
   "scripts": {
     "build": "vite build",
     "dev": "vite",
+    "format": "prettier --write src//**/*.{js,jsx,css} --config ./.prettierrc",
+    "lint-staged": "lint-staged",
+    "lint:fix": "eslint --fix 'src/**/*.{js,jsx}'",
+    "lint": "eslint 'src/**/*.{js,jsx}'",
     "prepare": "husky install",
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "prop-types": "^15.8.1",
+    "react": "16.8.0 || >=17.x",
+    "react-dom": "16.8.0 || >=17.x"
+  },
+  "peerDependencies": {
+    "react": "16.8.0 || >=17.x",
+    "react-dom": "16.8.0 || >=17.x"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
     "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
     "prettier": "^2.8.7",
     "vite": "^4.2.0"
-  }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "npm run lint",
+      "npm run format"
+    ]
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/clear-component-library.es.js",
+      "require": "./dist/clear-component-library.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "main": "./dist/clear-component-library.umd.js",
+  "module": "./dist/clear-component-library.es.js"
 }
