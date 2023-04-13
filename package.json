@@ -23,6 +23,7 @@
     "prepare": "husky install",
     "preview": "vite preview",
     "start": "npm run storybook",
+    "test": "echo 'Will add tests later'",
     "storybook": "storybook dev -p 6006"
   },
   "dependencies": {
