@@ -8,10 +8,7 @@
     "url": "https://github.com/jermspeaks/clear-component-library/issues"
   },
   "homepage": "https://github.com/jermspeaks/clear-component-library#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jermspeaks/clear-component-library"
-  },
+  "repository": "https://github.com/jermspeaks/clear-component-library.git",
   "type": "module",
   "scripts": {
     "build-storybook": "storybook build",
@@ -83,6 +80,6 @@
   "main": "./dist/clear-component-library.umd.js",
   "module": "./dist/clear-component-library.es.js",
   "publishConfig": {
-    "@jermspeaks:registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   }
 }
