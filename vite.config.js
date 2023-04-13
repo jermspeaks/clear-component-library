@@ -24,7 +24,7 @@ export default defineConfig((configEnv) => ({
   ],
   build: {
     lib: {
-      entry: resolve("src", "component/index.js"),
+      entry: resolve("src", "components/component.index.js"),
       name: "ClearComponentsLibrary",
       formats: ["es", "umd"],
       fileName: (format) => `clear-component-library.${format}.js`,
