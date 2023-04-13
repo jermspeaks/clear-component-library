@@ -28,7 +28,8 @@
   "dependencies": {
     "prop-types": "^15.8.1",
     "react": "16.8.0 || >=17.x",
-    "react-dom": "16.8.0 || >=17.x"
+    "react-dom": "16.8.0 || >=17.x",
+    "styled-components": "^5.3.9"
   },
   "peerDependencies": {
     "react": "16.8.0 || >=17.x",
