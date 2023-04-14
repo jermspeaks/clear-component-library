@@ -19,8 +19,8 @@ const Tab = styled.div`
   transition: all 0.2s;
 
   &:hover {
-    border-bottom-color: ${palette('secondaryText', 0)};
-    color: ${palette('secondaryText', 0)};
+    border-bottom-color: ${palette.secondaryText};
+    color: ${palette.secondaryText};
     text-decoration: none;
   }
 
@@ -29,8 +29,8 @@ const Tab = styled.div`
     css`
       &,
       &:hover {
-        border-bottom-color: ${palette('primaryBrand', 0)};
-        color: ${palette('primaryBrand', 0)};
+        border-bottom-color: ${palette.primaryBrand};
+        color: ${palette.primaryBrand};
         cursor: default;
       }
     `}
@@ -38,7 +38,7 @@ const Tab = styled.div`
     disabled &&
     css`
       & {
-        color: ${palette('disabledText', 0)};
+        color: ${palette.disabledText};
       }
 
       &:hover {
